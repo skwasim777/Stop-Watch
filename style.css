@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dbe9ff;
+}
+
+.wrapper {
+  width: min(90%, 31.25em);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.container {
+  background-color: #dfe2d0;
+  width: 100%;
+  padding: 3.75em 0;
+  border-radius: 0.8em;
+  box-shadow: 0 5.875em 5.75em rgba(1, 87, 185, 0.2);
+  border: 2px solid #333;
+}
+.timerDisplay {
+  position: relative;
+  width: 110%;
+  background-color: #3c98ff;
+  left: -5%;
+  padding: 1em 0;
+  font-family: "Roboto mono", monospace;
+  color: #e3e6d6;
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.3em;
+  box-shadow: 0 0.5em 1em rgba(2, 63, 132, 0.3);
+  border: 2px solid #333;
+}
+.buttons {
+  width: 80%;
+  margin: 3.8em auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons button {
+  font-size: 1.125em;
+  background-color: #dbe9ff;
+  color: #3c98ff;
+  padding: 1em 1.5em;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.5em;
+  cursor: pointer;
+  outline: none;
+}
+.buttons button:hover {
+  background-color: #253950;
+  color: rgb(221, 213, 122);
+}
+
+.buttons button:active {
+  background-color: #4262a1;
+  color: rgb(221, 213, 122);
+}
+#startTimer {
+  background-color: #39657e;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0.5em 1em rgba(9, 5, 137, 0.3);
+  border: 2px solid #6f6c6c;
+}
+#startTimer:hover {
+  background-color: #003399; /* Change the background color on hover */
+  color: rgb(221, 213, 122); /* Change the text color on hover */
+}
+#pauseTimer {
+  background-color: #39657e;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0.5em 1em rgba(9, 5, 137, 0.3);
+  border: 2px solid #6f6c6c;
+}
+#pauseTimer:hover {
+  background-color: #253950;
+  color: rgb(221, 213, 122);
+}
+#resetTimer {
+  background-color: #39657e;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0.5em 1em rgba(9, 5, 137, 0.3);
+  border: 2px solid #6f6c6c;
+}
+#resetTimer:hover {
+  background-color: #253950;
+  color: rgb(221, 213, 122);
+}
+@media screen and(max-width:500px) {
+  .wrapper {
+    font-size: 0.7em;
+  }
+}
